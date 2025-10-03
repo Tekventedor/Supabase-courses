@@ -19,7 +19,7 @@ export default function Login() {
     });
     setLoading(false);
     if (res.ok) {
-      router.push('/courses');
+      router.push('/');
     } else {
       const data = await res.json();
       setError(data.error || 'Login failed');
